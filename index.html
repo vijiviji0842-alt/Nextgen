@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextGen Symposium 2026</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="logo">NextGen 2026</div>
+        <nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#technical">Technical</a></li>
+                <li><a href="#non-technical">Non-Technical</a></li>
+                <li><a href="#register" class="cta-nav">Register Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h1>NextGen Symposium 2026</h1>
+            <p class="subtitle">Organized by Department of Computer Science and Engineering</p>
+            <div class="countdown" id="countdown">
+                <div class="time-block">
+                    <span id="days">00</span> Days
+                </div>
+                <div class="time-block">
+                    <span id="hours">00</span> Hours
+                </div>
+                <div class="time-block">
+                    <span id="minutes">00</span> Minutes
+                </div>
+                <div class="time-block">
+                    <span id="seconds">00</span> Seconds
+                </div>
+            </div>
+            <p class="deadline-alert">Registration Deadline: March 18th, 2026</p>
+            <a href="#register" class="cta-primary">Secure Your Spot</a>
+        </div>
+    </section>
+
+    <section id="technical" class="events-section">
+        <h2>Technical Events</h2>
+        <div class="grid">
+            <div class="card">
+                <i class="fas fa-project-diagram icon"></i>
+                <h3>Paper Presentation</h3>
+                <p>Team (2-3 members). Research-focused innovation.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-database icon"></i>
+                <h3>SQL Master</h3>
+                <p>Solo. Master the database challenges with PostgreSQL.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-code icon"></i>
+                <h3>Python Pro-Coding</h3>
+                <p>Solo. Logic-based problem solving.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-laptop-code icon"></i>
+                <h3>Web-Craft</h3>
+                <p>Team (2 members). UI/UX Design using HTML, CSS, JS.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="non-technical" class="events-section bg-alt">
+        <h2>Non-Technical Events</h2>
+        <div class="grid">
+            <div class="card">
+                <i class="fas fa-brain icon"></i>
+                <h3>Tech-Quiz</h3>
+                <p>Team (2 members). Test your tech knowledge.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-camera icon"></i>
+                <h3>Photography</h3>
+                <p>Solo. Capture the moment.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-map-marked-alt icon"></i>
+                <h3>Treasure Hunt</h3>
+                <p>Team (3-4 members). Solve clues to win.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-network-wired icon"></i>
+                <h3>Connection</h3>
+                <p>Team (2 members). Clue-based tech word game.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="register" class="register-section">
+        <div class="form-container">
+            <h2>Register for Symposium</h2>
+            <p class="fee">Entry Fee: ₹300 per participant (Includes Lunch & Certificate)</p>
+            <form id="registrationForm">
+                <div class="form-group">
+                    <label>Team Name (Optional)</label>
+                    <input type="text" name="team_name">
+                </div>
+                <div class="form-group">
+                    <label>Participant Name (Leader)</label>
+                    <input type="text" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label>College Name</label>
+                    <input type="text" name="college" required>
+                </div>
+                <div class="form-group">
+                    <label>Email ID</label>
+                    <input type="email" name="email" required>
+                </div>
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="accommodation" name="accommodation">
+                    <label for="accommodation">Need Accommodation (On-campus)</label>
+                </div>
+                <button type="submit" class="submit-btn">Register Now</button>
+            </form>
+            <p class="secure-note"><i class="fas fa-lock"></i> Secure Payment Gateway</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p><strong>Lead Organizer:</strong> Jayavarthini</p>
+            <p><strong>Contact:</strong> symposium2026@college.edu</p>
+            <p>© 2026 NextGen Symposium. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Chatbot Widget -->
+    <div id="chatbot-container">
+        <div id="chat-header">
+            <span>NextGen Assistant</span>
+            <button id="close-chat">&times;</button>
+        </div>
+        <div id="chat-messages">
+            <div class="message bot">
+                Hi! I'm your AI Assistant for NextGen Symposium 2026. Ask me about events, rules, or registration!
+            </div>
+        </div>
+        <div id="chat-input-area">
+            <input type="text" id="chat-input" placeholder="Ask a question...">
+            <button id="send-btn"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+    <button id="chat-toggle-btn">
+        <i class="fas fa-robot"></i>
+    </button>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
