@@ -4,160 +4,215 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NextGen Symposium 2026</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <title>NextGen Symposium 2026 | InfoTech Symposium</title>
+    <meta name="description"
+        content="Official website for NextGen Symposium 2026 organized by the Department of Electronics and Communication Engineering.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Space+Grotesk:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
-    <header>
-        <div class="logo">NextGen 2026</div>
-        <nav>
-            <ul>
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#technical">Technical</a></li>
-                <li><a href="#non-technical">Non-Technical</a></li>
-                <li><a href="#register" class="cta-nav">Register Now</a></li>
-            </ul>
-        </nav>
+    <div class="cursor-glow"></div>
+
+    <nav class="navbar">
+        <div class="logo">NextGen<span class="highlight">2026</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#details">Details</a></li>
+            <li><a href="register.html" class="cta-button">Register Now</a></li>
+        </ul>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <span class="badge">Department of ECE Presents</span>
+            <h1 class="glitch" data-text="NextGen Symposium">NextGen Symposium <br> <span
+                    class="highlight-text">2026</span></h1>
+            <p class="subtitle">Innovate. Integrate. Inspire.</p>
+            <div class="event-meta">
+                <div class="meta-item">
+                    <i class="far fa-calendar-alt"></i>
+                    <span>February 28, 2026</span>
+                </div>
+                <div class="meta-item warning">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <span>Reg Deadline: feb 28, 2026</span>
+                </div>
+            </div>
+            <div class="cta-group">
+                <a href="register.html" class="primary-btn">Register Now <i class="fas fa-arrow-right"></i></a>
+                <a href="#events" class="secondary-btn">Explore Events</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="glowing-orb"></div>
+            <div class="grid-overlay"></div>
+        </div>
     </header>
 
-    <section id="hero">
-        <div class="hero-content">
-            <h1>NextGen Symposium 2026</h1>
-            <p class="subtitle">Organized by Department of Computer Science and Engineering</p>
-            <div class="countdown" id="countdown">
-                <div class="time-block">
-                    <span id="days">00</span> Days
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">About The <span class="highlight">Event</span></h2>
+            <div class="about-grid">
+                <div class="about-card glass">
+                    <i class="fas fa-microchip icon"></i>
+                    <h3>Tech Focus</h3>
+                    <p>organized by the Department of Electronics and Communication Engineering to showcase innovation.
+                    </p>
                 </div>
-                <div class="time-block">
-                    <span id="hours">00</span> Hours
+                <div class="about-card glass">
+                    <i class="fas fa-users icon"></i>
+                    <h3>Community</h3>
+                    <p>Connect with peers, industry experts, and tech enthusiasts from across the region.</p>
                 </div>
-                <div class="time-block">
-                    <span id="minutes">00</span> Minutes
+                <div class="about-card glass">
+                    <i class="fas fa-trophy icon"></i>
+                    <h3>Competition</h3>
+                    <p>Prove your skills in Paper Presentations, Coding, and more to win exciting prizes.</p>
                 </div>
-                <div class="time-block">
-                    <span id="seconds">00</span> Seconds
-                </div>
-            </div>
-            <p class="deadline-alert">Registration Deadline: March 18th, 2026</p>
-            <a href="#register" class="cta-primary">Secure Your Spot</a>
-        </div>
-    </section>
-
-    <section id="technical" class="events-section">
-        <h2>Technical Events</h2>
-        <div class="grid">
-            <div class="card">
-                <i class="fas fa-project-diagram icon"></i>
-                <h3>Paper Presentation</h3>
-                <p>Team (2-3 members). Research-focused innovation.</p>
-            </div>
-            <div class="card">
-                <i class="fas fa-database icon"></i>
-                <h3>SQL Master</h3>
-                <p>Solo. Master the database challenges with PostgreSQL.</p>
-            </div>
-            <div class="card">
-                <i class="fas fa-code icon"></i>
-                <h3>Python Pro-Coding</h3>
-                <p>Solo. Logic-based problem solving.</p>
-            </div>
-            <div class="card">
-                <i class="fas fa-laptop-code icon"></i>
-                <h3>Web-Craft</h3>
-                <p>Team (2 members). UI/UX Design using HTML, CSS, JS.</p>
             </div>
         </div>
     </section>
 
-    <section id="non-technical" class="events-section bg-alt">
-        <h2>Non-Technical Events</h2>
-        <div class="grid">
-            <div class="card">
-                <i class="fas fa-brain icon"></i>
-                <h3>Tech-Quiz</h3>
-                <p>Team (2 members). Test your tech knowledge.</p>
+    <section id="events" class="events-section">
+        <div class="container">
+            <h2 class="section-title">Event <span class="highlight">Catalog</span></h2>
+
+            <div class="tabs">
+                <button class="tab-btn active" data-target="technical">Technical</button>
+                <button class="tab-btn" data-target="non-technical">Non-Technical</button>
             </div>
-            <div class="card">
-                <i class="fas fa-camera icon"></i>
-                <h3>Photography</h3>
-                <p>Solo. Capture the moment.</p>
+
+            <div class="events-grid" id="technical">
+                <!-- Technical Events -->
+                <div class="event-card">
+                    <div class="card-header">
+                        <i class="fas fa-project-diagram"></i>
+                        <span class="tag">Team (2-3)</span>
+                    </div>
+                    <h3>Paper Presentation</h3>
+                    <p>Showcase your research-focused innovations and ideas.</p>
+                </div>
+                <div class="event-card">
+                    <div class="card-header">
+                        <i class="fas fa-database"></i>
+                        <span class="tag">Solo</span>
+                    </div>
+                    <h3>SQL Master</h3>
+                    <p>Master PostgreSQL challenges and query your way to victory.</p>
+                </div>
+                <div class="event-card">
+                    <div class="card-header">
+                        <i class="fab fa-python"></i>
+                        <span class="tag">Solo</span>
+                    </div>
+                    <h3>Python Pro-Coding</h3>
+                    <p>Logic-based problem solving for the coding elite.</p>
+                </div>
+                <div class="event-card">
+                    <div class="card-header">
+                        <i class="fas fa-code"></i>
+                        <span class="tag">Team (2)</span>
+                    </div>
+                    <h3>Web-Craft</h3>
+                    <p>UI/UX design challenge using HTML, CSS, and JS.</p>
+                </div>
             </div>
-            <div class="card">
-                <i class="fas fa-map-marked-alt icon"></i>
-                <h3>Treasure Hunt</h3>
-                <p>Team (3-4 members). Solve clues to win.</p>
-            </div>
-            <div class="card">
-                <i class="fas fa-network-wired icon"></i>
-                <h3>Connection</h3>
-                <p>Team (2 members). Clue-based tech word game.</p>
+
+            <div class="events-grid hidden" id="non-technical">
+                <!-- Non-Technical Events -->
+                <div class="event-card gradient-card">
+                    <div class="card-header">
+                        <i class="fas fa-brain"></i>
+                        <span class="tag">Team (2)</span>
+                    </div>
+                    <h3>Tech-Quiz</h3>
+                    <p>Test your knowledge of the digital world.</p>
+                </div>
+                <div class="event-card gradient-card">
+                    <div class="card-header">
+                        <i class="fas fa-camera"></i>
+                        <span class="tag">Solo</span>
+                    </div>
+                    <h3>Photography</h3>
+                    <p>Capture the perfect frame and showcase your perspective.</p>
+                </div>
+                <div class="event-card gradient-card">
+                    <div class="card-header">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <span class="tag">Team (3-4)</span>
+                    </div>
+                    <h3>Treasure Hunt</h3>
+                    <p>Solve the clues, find the prize. A test of wit and speed.</p>
+                </div>
+                <div class="event-card gradient-card">
+                    <div class="card-header">
+                        <i class="fas fa-network-wired"></i>
+                        <span class="tag">Team (2)</span>
+                    </div>
+                    <h3>Connection</h3>
+                    <p>A witty, clue-based tech word game.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="register" class="register-section">
-        <div class="form-container">
-            <h2>Register for Symposium</h2>
-            <p class="fee">Entry Fee: ₹300 per participant (Includes Lunch & Certificate)</p>
-            <form id="registrationForm">
-                <div class="form-group">
-                    <label>Team Name (Optional)</label>
-                    <input type="text" name="team_name">
+    <section id="details" class="details-section">
+        <div class="container">
+            <h2 class="section-title">Important <span class="highlight">Details</span></h2>
+            <div class="details-wrapper">
+                <div class="detail-box">
+                    <h3>Entry Fee</h3>
+                    <div class="price">₹300</div>
+                    <p>Per Participant</p>
+                    <ul class="features-list">
+                        <li><i class="fas fa-check"></i> Full Event Access</li>
+                        <li><i class="fas fa-check"></i> Lunch Included</li>
+                        <li><i class="fas fa-check"></i> Participation Certificate</li>
+                    </ul>
                 </div>
-                <div class="form-group">
-                    <label>Participant Name (Leader)</label>
-                    <input type="text" name="name" required>
+                <div class="detail-box info-box">
+                    <h3>Lead Organizer</h3>
+                    <p class="organizer-name">Jayavarthini</p>
+                    <div class="divider"></div>
+                    <h3>Accommodation</h3>
+                    <p>On-campus stay available for outstation students. <br>Please select in registration form.</p>
                 </div>
-                <div class="form-group">
-                    <label>College Name</label>
-                    <input type="text" name="college" required>
-                </div>
-                <div class="form-group">
-                    <label>Email ID</label>
-                    <input type="email" name="email" required>
-                </div>
-                <div class="form-group checkbox-group">
-                    <input type="checkbox" id="accommodation" name="accommodation">
-                    <label for="accommodation">Need Accommodation (On-campus)</label>
-                </div>
-                <button type="submit" class="submit-btn">Register Now</button>
-            </form>
-            <p class="secure-note"><i class="fas fa-lock"></i> Secure Payment Gateway</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="register" class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Participate?</h2>
+                <p>Don't miss the deadline on <strong>February 28, 2026</strong>.</p>
+                <a href="register.html" class="primary-btn large">Open Registration Portal <i
+                        class="fas fa-external-link-alt"></i></a>
+            </div>
         </div>
     </section>
 
     <footer>
-        <div class="footer-content">
-            <p><strong>Lead Organizer:</strong> Jayavarthini</p>
-            <p><strong>Contact:</strong> symposium2026@college.edu</p>
-            <p>© 2026 NextGen Symposium. All rights reserved.</p>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">NextGen 2026</div>
+                <p>Created by the nextgen Symposium 2026 Assistant</p>
+            </div>
         </div>
     </footer>
 
-    <!-- Chatbot Widget -->
-    <div id="chatbot-container">
-        <div id="chat-header">
-            <span>NextGen Assistant</span>
-            <button id="close-chat">&times;</button>
-        </div>
-        <div id="chat-messages">
-            <div class="message bot">
-                Hi! I'm your AI Assistant for NextGen Symposium 2026. Ask me about events, rules, or registration!
-            </div>
-        </div>
-        <div id="chat-input-area">
-            <input type="text" id="chat-input" placeholder="Ask a question...">
-            <button id="send-btn"><i class="fas fa-paper-plane"></i></button>
-        </div>
-    </div>
-    <button id="chat-toggle-btn">
-        <i class="fas fa-robot"></i>
-    </button>
-
-    <script src="./js/script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

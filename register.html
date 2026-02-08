@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | NextGen Symposium 2026</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Space+Grotesk:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .form-container {
+            max-width: 800px;
+            margin: 120px auto 60px;
+            padding: 3rem;
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #aeaeae;
+            font-size: 0.95rem;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 1rem;
+            background: rgba(0, 0, 0, 0.3);
+            border: 1px solid #333;
+            border-radius: 8px;
+            color: var(--text-color);
+            font-family: var(--font-body);
+            transition: border-color 0.3s ease;
+        }
+
+        input:focus,
+        select:focus,
+        textarea:focus {
+            outline: none;
+            border-color: var(--accent-color);
+        }
+
+        .checkbox-group {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 0.5rem;
+        }
+
+        .checkbox-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(255, 255, 255, 0.03);
+            padding: 0.8rem;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .checkbox-item:hover {
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .checkbox-item input {
+            width: auto;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #aeaeae;
+            text-decoration: none;
+            margin-bottom: 2rem;
+            transition: color 0.3s ease;
+        }
+
+        .back-link:hover {
+            color: var(--accent-color);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cursor-glow"></div>
+
+    <nav class="navbar">
+        <div class="logo">NextGen<span class="highlight">2026</span></div>
+        <a href="index.html" class="cta-button">Back to Home</a>
+    </nav>
+
+    <div class="container">
+        <div class="form-container">
+            <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to Event Details</a>
+            <h2 class="section-title" style="text-align: left; margin-bottom: 1rem;">Event <span
+                    class="highlight">Registration</span></h2>
+            <p style="color: #aeaeae; margin-bottom: 2rem;">Fill out the form below to secure your spot. Payment of ₹300
+                will be collected at the venue.</p>
+
+            <form id="registrationForm">
+                <div class="form-group">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" name="fullname" required placeholder="John Doe">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required placeholder="john@example.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="+91 98765 43210">
+                </div>
+
+                <div class="form-group">
+                    <label for="college">College / Institution</label>
+                    <input type="text" id="college" name="college" required placeholder="Enter your college name">
+                </div>
+
+                <div class="form-group">
+                    <label for="dept">Department</label>
+                    <input type="text" id="dept" name="dept" required placeholder="e.g. ECE, CSE">
+                </div>
+
+                <div class="form-group">
+                    <label>Accommodation Required?</label>
+                    <div class="checkbox-item" style="width: fit-content;">
+                        <input type="checkbox" id="accommodation" name="accommodation">
+                        <label for="accommodation" style="margin: 0; cursor: pointer;">Yes, I need on-campus
+                            stay</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Select Technical Events</label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="events" value="paper-presentation"> Paper Presentation
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="events" value="sql-master"> SQL Master
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="events" value="python-pro"> Python Pro-Coding
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="events" value="web-craft"> Web-Craft
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Select Non-Technical Events</label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="events" value="tech-quiz"> Tech-Quiz
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="events" value="photography"> Photography
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="events" value="treasure-hunt"> Treasure Hunt
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="events" value="connection"> Connection
+                        </label>
+                    </div>
+                </div>
+
+                <button type="submit" class="primary-btn"
+                    style="width: 100%; border: none; cursor: pointer; font-size: 1.1rem; margin-top: 1rem;">Submit
+                    Registration</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">NextGen 2026</div>
+                <p>Created by the nextgen Symposium 2026 Assistant</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('registrationForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            // Simulate form submission
+            const btn = this.querySelector('button[type="submit"]');
+            const originalText = btn.innerHTML;
+
+            btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Processing...';
+            btn.style.opacity = '0.7';
+
+            setTimeout(() => {
+                alert('Registration Successful! Taking you back to home page.');
+                window.location.href = 'index.html';
+            }, 1500);
+        });
+    </script>
+</body>
+
+</html>
